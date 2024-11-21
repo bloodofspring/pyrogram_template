@@ -7,7 +7,7 @@ class BaseModel(Model):
     """
     Базовая модель с автоматическим заполнением поля ID и сохранением времени создания, изменения
     """
-    ID = AutoField()
+    id = AutoField()
     created_at = DateTimeField(default=datetime.now)
     updated_at = DateTimeField(default=datetime.now)
 
